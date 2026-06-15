@@ -14,6 +14,14 @@ An intelligent autonomous vehicle built using **Raspberry Pi, Python, Computer V
 
 ---
 
+## Project Demo
+
+The video below demonstrates the autonomous car performing lane following and obstacle detection.
+
+[Download Demo Video](demo/autonomous_car_demo.mp4)
+
+---
+
 ## Hardware Components
 
 | Component | Purpose |
@@ -132,15 +140,15 @@ Computer Vision Integration
 
 ### Autonomous Car
 
-![Autonomous Car](autonomous_car.jpg)
+![Autonomous Car](images/autonomous_car.jpg)
 
 ### Circuit Diagram
 
-![Circuit Diagram](circuit_diagram.jpg)
+![Circuit Diagram](images/circuit_diagram.jpg)
 
 ### GPIO Connections
 
-![GPIO Connections](gpio_connections.jpg)
+![GPIO Connections](images/gpio_connections.jpg)
 
 ---
 
