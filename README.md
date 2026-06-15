@@ -1,4 +1,4 @@
-# AI-Powered Autonomous Car Using Raspberry Pi
+# Coumpter Vision Autonomous Car Using Raspberry Pi
 
 An intelligent autonomous vehicle built using **Raspberry Pi, Python, Computer Vision, and Embedded Systems**. The vehicle combines **lane detection**, **person detection**, and **obstacle avoidance** to navigate autonomously while ensuring safety through real-time environmental monitoring.
 
@@ -170,6 +170,6 @@ Through this project, I gained practical experience in:
 
 **Yashwanth JV Nayak**
 
-Passionate about AI, Data Science, Robotics, and Intelligent Systems.
+Passionate about Data Science, Robotics, and Intelligent Systems.
 
 ---
