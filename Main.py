@@ -5,7 +5,7 @@ import UltrasonicModule as ultra
 import LaneModule as lane
 from PersonDetection import detectPerson
 
-print("🚗 Autonomous Car Starting...")
+print(" Autonomous Car Starting...")
 
 try:
     while True:
@@ -17,7 +17,7 @@ try:
         # --- Person Detection ---
         img, person_found = detectPerson(img)
         if person_found:
-            print("🚨 Person Detected! Stopping.")
+            print(" Person Detected! Stopping.")
             motor.stop()
             cv2.imshow("Autonomous Car", img)
             if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -29,11 +29,11 @@ try:
 
         if distance == -1:
             # Sensor timeout — no reading, drive cautiously
-            print("⚠️  Ultrasonic timeout, no reading.")
+            print("  Ultrasonic timeout, no reading.")
             motor.move(30, 0)
         elif distance < 20:
             # Obstacle too close
-            print(f"🛑 Obstacle at {round(distance, 2)} cm — Stopping.")
+            print(f" Obstacle at {round(distance, 2)} cm — Stopping.")
             motor.stop()
         else:
             # --- Lane Following ---
@@ -47,14 +47,14 @@ try:
             break
 
 except KeyboardInterrupt:
-    print("\n⛔ Interrupted by user.")
+    print("\n Interrupted by user.")
 
 except Exception as e:
-    print(f"\n❌ Unexpected error: {e}")
+    print(f"\n Unexpected error: {e}")
 
 finally:
-    print("🧹 Cleaning up...")
+    print(" Cleaning up...")
     motor.stop()
     motor.cleanup()
     cv2.destroyAllWindows()
-    print("✅ Done.")
+    print("Done.")
